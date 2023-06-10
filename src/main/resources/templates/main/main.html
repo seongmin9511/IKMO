@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IKMO</title>
+
+<link rel="stylesheet" href="./css/main/main.css" />
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="./js/main/main.js" defer></script>
+
+</head>
+<body>
+	<div class="main_div">
+	
+		<div class="banner">
+			<h2 class="IKMO">IKMO</h2>
+		</div>
+		
+		<div class="tab_div">
+			<ul class="tab-container">
+				<li class="tab-container__item active" data-tab="tab1">
+				    <a class="tab-container__item--title" href="#">경기</a>
+				</li>
+				<li class="tab-container__item" data-tab="tab2">
+				    <a class="tab-container__item--title" href="#">엔트리 등록</a>
+				</li>
+			</ul>
+		</div>
+		
+		<section class="content-container">
+		
+			<article id="tab1" class="content-container__content target">
+	          	<div class="gameContent" id="gameContent">
+	          		<h3>1군 경기</h3>
+	          		<div id="gameTable"></div>
+	          	</div>
+	        </article>
+	        
+	        <article id="tab2" class="content-container__content">
+	        	<h1>엔트리 등록</h1>
+	         	<div class="entrySubmission" id="entrySubmission">
+					<label>상대 팀 : </label>
+					<input id="competeTeam" type="text" readonly="readonly">
+					<input type="button" id="teamBtn" value="팀 검색">
+					<br>
+					<label>1경기 : </label>
+					<input id="firstPlayer" type="text" readonly="readonly">
+					<input type="button" id="player1Btn" value="선수 검색">
+					<br>
+					<label>2경기 : </label>
+					<input id="secondPlayer" type="text" readonly="readonly">
+					<input type="button" id="player2Btn" value="선수 검색">
+					<br>
+					<label>HOME/AWAY : </label>
+					<select id="home_away">
+						<option value="home" selected="selected">HOME</option>
+						<option value="away">AWAY</option>
+					</select>
+				</div>
+				<button id="entryBtn">엔트리 제출</button>
+	        </article>
+		
+		</section>
+		
+	</div>
+		
+	
+	<!-- TEAM MODAL START -->
+	<div class="team_modal hidden">
+		<div class="team_bg"></div>
+	    <div class="team_modal_content">
+	        <h2>팀 검색 팝업</h2>
+	        <div id="teamContent"></div>
+	        <div class="teamBtnDiv">
+		        <button class="teamModalBtn" type="button" id="team_modal_apply_btn">적용</button>
+		        <button class="teamModalBtn" type="button" id="team_modal_close_btn">취소</button>
+	        </div>
+	    </div>
+	</div>
+	<!-- TEAM MODAL END -->
+	
+	<!-- PLAYER1 MODAL START -->
+	<div class="player1_modal hidden">
+		<div class="player1_bg"></div>
+	    <div class="player1_modal_content">
+	        <h2>선수 검색 팝업</h2>
+	        <div id="player1Content"></div>
+	        <div class="player1BtnDiv">
+		        <button class="player1ModalBtn" type="button" id="player1_modal_apply_btn">적용</button>
+		        <button class="player1ModalBtn" type="button" id="player1_modal_close_btn">취소</button>
+	        </div>
+	    </div>
+	</div>
+	<!-- PLAYER1 MODAL END -->
+	
+	<!-- PLAYER2 MODAL START -->
+	<div class="player2_modal hidden">
+		<div class="player2_bg"></div>
+	    <div class="player2_modal_content">
+	        <h2>선수 검색 팝업</h2>
+	        <div id="player2Content"></div>
+	        <div class="player2BtnDiv">
+		        <button class="player2ModalBtn" type="button" id="player2_modal_apply_btn">적용</button>
+		        <button class="player2ModalBtn" type="button" id="player2_modal_close_btn">취소</button>
+	        </div>
+	    </div>
+	</div>
+	<!-- PLAYER2 MODAL END -->
+	
+</body>
+</html>

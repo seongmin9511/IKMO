@@ -1,0 +1,223 @@
+/* 팝업 CSS 생성 START */
+
+.teamModalBtn{
+	background-color: #F9B514;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.player1ModalBtn{
+	background-color: #F9B514;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.player2ModalBtn{
+	background-color: #F9B514;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.team_modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.player1_modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.player2_modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.team_modal .team_bg{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player1_modal .player1_bg{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.player2_modal .player2_bg{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.team_modal_content{
+	position: absolute;
+	background-color: #fff;
+	width: 400px;
+	padding: 15px;
+}
+
+.player1_modal_content{
+	position: absolute;
+	background-color: #fff;
+	width: 400px;
+	padding: 15px;
+}
+
+.player2_modal_content{
+	position: absolute;
+	background-color: #fff;
+	width: 400px;
+	padding: 15px;
+}
+
+.team_modal_content #teamContent table{
+	align-items: center;
+	text-align: center;
+	border: 1px solid gray;
+}
+
+.player1_modal_content #player1Content table{
+	align-items: center;
+	text-align: center;
+	border: 1px solid gray;
+}
+
+.player2_modal_content #player2Content table{
+	align-items: center;
+	text-align: center;
+	border: 1px solid gray;
+}
+
+.team_modal_content .teamBtnDiv{
+	display: flex;
+	text-align: center;
+}
+
+.player1_modal_content .player1BtnDiv{
+	display: flex;
+	text-align: center;
+}
+
+.player2_modal_content .player2BtnDiv{
+	display: flex;
+	text-align: center;
+}
+
+.team_modal_content button{
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+	
+}
+
+.player1_modal_content button{
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+}
+
+.player2_modal_content button{
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+}
+
+.hidden{
+	display: none;
+}
+
+.selectRow{
+	background-color: #369fff;
+}
+
+/* 팝업 CSS 생성 END */
+
+/* 탭 메뉴 CSS START */
+
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  margin: 0 auto;
+}
+.tab-container {
+  display: flex;
+}
+.tab-container__item {
+  cursor: pointer;
+}
+.tab-container__item:hover {
+  background-color: #369fff;
+  transition: background-color 0.4s ease-in-out;
+}
+.tab-container__item:hover .tab-container__item--title {
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+}
+.tab-container__item.active {
+  border-bottom: 2px solid #369fff;
+}
+.tab-container__item.active .tab-container__item--title {
+  color: #369fff;
+}
+.tab-container__item.active:hover {
+  background-color: #369fff;
+  transition: background-color 0.4s ease-in-out;
+}
+.tab-container__item.active:hover .tab-container__item--title {
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+}
+.tab-container__item--title {
+  display: inline-block;
+  color: #999;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 15px;
+}
+.content-container {
+  padding: 10px;
+}
+.content-container__content {
+  display: none;
+}
+.content-container__content.target {
+  display: block;
+}
+
+/* 탭 메뉴 CSS END */
